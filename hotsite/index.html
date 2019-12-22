@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="JS/jquery.js"></script>
+    <script src="JS/ancora.js"></script>
+    <script src="JS/scroll.js"></script>
+    <script>
+        var cont = 0;
+        // var contVolta = 0;
+    $(document).ready(function () {
+
+        
+
+    $(".seta_direita").click(function () {
+
+        cont++;
+        if(cont==1){
+            $("#item1").animate({
+            marginLeft: "-50%"
+            }, 1000)
+            $("#item2").animate({
+            marginLeft: "0px"
+        }, 1000)
+        $("#img_dica1").animate({
+            marginLeft: "-50%"
+            }, 1000)
+            $("#img_dica5").animate({
+            marginLeft: "0px"
+        }, 1000)
+
+        }
+
+
+        
+        console.log(cont);
+        if(cont==2){
+            console.log('entrou');
+            $("#item2").animate({
+            marginLeft: "-50%"
+            }, 1000)
+            $("#item3").animate({
+            marginLeft: "0px"
+        }, 1000)
+
+        $("#img_dica5").animate({
+            marginLeft: "-50%"
+            }, 1000)
+            $("#img_dica2").animate({
+            marginLeft: "0px"
+        }, 1000)
+        
+        }
+
+        if(cont==3){
+          
+            $("#item3").animate({
+            marginLeft: "-50%"
+            }, 1000)
+            $("#item4").animate({
+            marginLeft: "0px"
+        }, 1000)
+
+
+        $("#img_dica2").animate({
+            marginLeft: "-50%"
+            }, 1000)
+            $("#img_dica3").animate({
+            marginLeft: "0px"
+        }, 1000)
+        }
+
+  
+        if(cont==4){
+         
+            $("#item4").animate({
+            marginLeft: "-50%"
+            }, 1000)
+            $("#item5").animate({
+            marginLeft: "0px"
+        }, 1000)
+
+
+        $("#img_dica3").animate({
+            marginLeft: "-50%"
+            }, 1000)
+            $("#img_dica4").animate({
+            marginLeft: "0px"
+        }, 1000)
+        }
+
+
+        // if(cont==5){
+        //     console.log('entrou');
+        //     $("#item5").animate({
+        //     marginLeft: "-500%"
+        //     }, 1000)
+        // //     $("#item2").animate({
+        // //     marginLeft: "0px"
+        // // }, 1000)
+        // }
+      
+
+        if(cont==5){
+            console.log('entrou');
+            $("#item1").animate({
+            marginLeft: "0px"
+            }, 1000)
+  
+        $("#item2").animate({
+            marginLeft: "50%"
+        }, 1000)
+        $("#item3").animate({
+            marginLeft: "50%"
+        }, 1000)
+        $("#item4").animate({
+            marginLeft: "50%"
+        }, 1000)
+        $("#item5").animate({
+            marginLeft: "50%"
+        }, 1000)
+
+
+
+        $("#img_dica1").animate({
+            marginLeft: "0px"
+            }, 1000)
+  
+        $("#img_dica2").animate({
+            marginLeft: "50%"
+        }, 1000)
+        $("#img_dica5").animate({
+            marginLeft: "50%"
+        }, 1000)
+        $("#img_dica3").animate({
+            marginLeft: "50%"
+        }, 1000)
+        $("#img_dica4").animate({
+            marginLeft: "50%"
+        }, 1000)
+  
+
+        cont =0;
+        }
+
+
+   
+
+
+       
+       
+    })
+
+    $(".seta_esquerda").click(function () {
+        
+      
+        if(cont==1){
+            $("#item1").animate({
+            marginLeft: "0px"
+            }, 1000)
+        //     $("#item2").animate({
+        //     marginLeft: "0px"
+        // }, 1000)
+        $("#img_dica1").animate({
+            marginLeft: "0px"
+            }, 1000)
+
+        cont--;
+
+        cont--;
+        }
+      
+        if(cont==2){
+            console.log('entrou no 2 <');
+            $("#item2").animate({
+            marginLeft: "0px"
+            }, 1000)
+        //     $("#item2").animate({
+        //     marginLeft: "0px"
+        // }, 1000)
+
+        // console.log('entrou no 2 <');
+        $("#img_dica5").animate({
+            marginLeft: "0px"
+            }, 1000)
+
+        cont--;
+        }
+
+        if(cont==3){
+            console.log('entrou no 3 <');
+            $("#item3").animate({
+            marginLeft: "0px"
+            }, 1000)
+        //     $("#item2").animate({
+        //     marginLeft: "0px"
+        // }, 1000)
+
+        $("#img_dica2").animate({
+            marginLeft: "0px"
+            }, 1000)
+
+        cont--;
+        }
+
+  
+        if(cont==4){
+           
+            $("#item4").animate({
+            marginLeft: "0px"
+            }, 1000)
+        //     $("#item2").animate({
+        //     marginLeft: "0px"
+        // }, 1000)
+
+        $("#img_dica3").animate({
+            marginLeft: "0px"
+            }, 1000)
+
+        cont--;
+        }
+
+
+        // if(cont==5){
+        //     console.log('entrou');
+        //     $("#item5").animate({
+        //     marginLeft: "-500%"
+        //     }, 1000)
+        // //     $("#item2").animate({
+        // //     marginLeft: "0px"
+        // // }, 1000)
+        // }
+      
+
+        if(cont==5){
+            console.log('entrou');
+            $("#item1").animate({
+            marginLeft: "0px"
+            }, 1000)
+        //     $("#item2").animate({
+        //     marginLeft: "0px"
+        // }, 1000)
+
+        $("#img_dica1").animate({
+            marginLeft: "0px"
+            }, 1000)
+
+        cont=0;
+       
+        }
+        console.log(cont);
+       
+        console.log(cont + 'fim')
+    })
+
+
+        $('#fechar').click(function(){
+            // alert('a');
+            $('#container').fadeOut(1000); 
+        });
+    })
+
+
+
+
+
+
+ 
+    </script>
+</head>
+
+<body>
+    <div id="container">
+            
+        <div id="containerAmpliar">
+                <div id="areaClose">
+                    <div id="fechar"></div>
+                </div>
+                <div id="img1Ampliar"></div>  
+                <!-- <img id="tagImg1" src=´imagens/img_aprenda1.jpg> -->
+        </div>
+    </div>
+    <div id="header">
+        <div id="div_logo"></div>
+        <div id="div_menu1"><a href="#titulo_dica">DICAS</a></div>
+        <div id="div_menu2"><a href="#titulo_aprenda">APRENDA COM A GENTE</a></div>
+        <div id="div_menu3">
+            <a href="#footer">CONTATO</a>
+        </div>
+    </div>
+    <div id="bgLaranja">
+        <div id="area1">
+            <div class="bg_point">
+                <div id="imgFamilia">
+                    <img id="tagImgFamilia" src="imagens/familia.png">
+                </div>
+            </div>
+        </div>
+        <div id="area2">
+            <div id="divImg">
+                <video type="video/mp4" poster="imagens/imgVideo.jpg" class="bg_video" controls>
+                    <!-- <div id="iconPlay"></div> -->
+                    <source  src="videos/embasa_1.mp4">  
+                </video>
+            </div>
+        </div>
+
+    </div>
+    <div id="area3">
+        <div id="titulo_dica">
+            DICAS
+        </div>
+        <div id="div_slider">
+            <div class="seta_esquerda"></div>
+            <div id="imgCaixa">
+                <div class="carrosel">
+                        <div class="item" id="img_dica1" >
+                            <!-- <img src="imagens/imgCaixa.png"> -->
+                        </div>
+                        <div class="item" id="img_dica5"></div>
+
+                        <div class="item active" id="img_dica2"  >
+                        </div>
+
+                        <div class="item active" id="img_dica3" >
+                        </div>
+
+                        <div class="item active" id="img_dica4"  >
+    
+                        </div>
+                        
+        
+                </div>  
+            </div>
+            <div id="areaTxt2">
+                <div class="carrosel2">
+                    <div class="item" id="item1">
+                        ONDE CHEGAR<br> A ONDA É VERIFICAR SE A CAPACIDADE DA CAIXA D'ÁGUA DO SEU IMÓVEL 
+                        ATENDE SUAS NECESSIDADES DIÁRIAS
+                    </div>
+                    <div class="item active" id="item2">
+                        ONDE CHEGAR<br> A ONDA É VERIFICAR E CORRIGIR VAZAMENTOS NA REDE INTERNA
+                    </div>
+                    <div class="item active" id="item3">
+                        ONDE CHEGAR<br> A ONDA FAZER REUSO DA ÁGUA SEMPRE QUE POSSIVEL
+                    </div>
+                    <div class="item active" id="item4">
+                        ONDE CHEGAR<br> A ONDA É EVITAR ENTUPIMENTO 
+
+                        DA REDE DE ESGOTO. 
+                        
+                        POR ISSO, NADA DE DESCARTAR 
+                        
+                        ÓLEO DE FRITURA NA PIA DA COZINHA.
+                    </div>
+                    <div class="item active" id="item5">
+                        ONDE CHEGAR<br> A ONDA É  DENUNCIAR 
+
+                        O FURTO DE ÁGUA 
+                        
+                        NA REDE DISTRIBUIDORA. 
+                        
+                        GATO É CRIME E PREJUDICA 
+                        
+                        QUEM PAGA PELO SERVIÇO.
+                    </div>
+                </div>
+            </div>
+            <div class="seta_direita"></div>
+        </div>
+    </div>
+    <div id="area4">
+        <div id="titulo_aprenda">
+            APRENDA COM A GENTE
+        </div>
+        <div id="div_slider2">
+            <!-- <div class="seta_esquerda"></div> -->
+            <div class="div_img img1" onclick="teste(1)">
+                <!-- <img id="tagImg1" src="imagens/img_aprenda1.jpg"> -->
+
+            </div>
+            <div class="div_img img2" onclick="teste(2)">
+
+            </div>
+            <div class="div_img img3" onclick="teste(3)">
+
+            </div>
+            <!-- <div class="seta_direita"></div> -->
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer_txt">
+            Empresa Baiana de Água e Saneamento S.A.<br> 4ª Avenida, 420, Centro Administrativo da Bahia - CAB<br> CEP: 41.745-002 - Salvador, Bahia, Brasil
+        </div>
+        <div id="footer_tel">
+            Telefone<br> 0800 0555 195
+        </div>
+        <div id="footer_sociais">
+            <div id="txtRedes">REDES SOCIAIS</div>
+            <div id="areaIcons">
+                <div class="icons face"></div>
+                <div class="icons twitter"></div>
+                <div class="icons google"></div>
+                <div class="icons insta"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+            function teste(id){
+                    // alert(id)
+                    $('#container').fadeIn(1000);
+                    //slideDow, toggle, slidetoggle, fadeIn
+                    $('#container').css('display', 'flex');
+                    // $('#img1Ampliar').css('height', 'vw');
+                    // $('#img1Ampliar').css('background-size', 'cover');
+        
+                    document.getElementById('img1Ampliar').style.background=`url('imagens/img_aprenda${id}.jpg') no-repeat `;
+                    const div = document.getElementById('img1Ampliar');
+
+                    // div.innerHTML += `<img id="tagImg1" src="imagens/img_aprenda${id}.jpg"></img>`;
+                };
+
+    </script>
+</body>
+
+</html>

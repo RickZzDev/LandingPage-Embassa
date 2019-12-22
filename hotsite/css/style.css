@@ -1,0 +1,1414 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+
+    background-image: url('../imagens/bglaranja.jpg');
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*IMPORTANDO FONTE*/
+
+@font-face {
+    font-family: 'MohrRoundedAlt';
+    src: url('../font/MohrRounded-Light.ttf');
+    src: local('MohrRoundedAlt'), local('MohrRoundedAlt'), url('../font/MohrRounded-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MohrRounded-Regular';
+    src: url('../font/MohrRounded-Regular.ttf');
+    src: local('MohrRounded-Regular'), local('MohrRounded-Regular'), url('../font/MohrRounded-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MohrRounded-Black';
+    src: url('../font/MohrRoundedAlt-Black.ttf');
+    src: local('MohrRoundedAlt-Back'), local('MohrRoundedAlt-Black'), url('../font/MohrRoundedAlt-Black.ttf') format('truetype');
+}
+
+
+/******HEADER**********/
+
+#header {
+    width: 100%;
+    height: 10vh;
+    background-image: url('../imagens/header.jpg');
+    background-size: cover;
+    display: flex;
+    box-sizing: border-box;
+    padding: 1vh;
+    padding-top: 2vh;
+}
+
+#div_logo {
+    width: 10%;
+    height: 80%;
+    background-image: url('../imagens/logo.png');
+    background-position: center;
+    background-size: contain;
+    background-color: ;
+    background-repeat: no-repeat;
+    margin-left: 15vw;
+}
+
+#div_menu1 {
+    min-width: 10%;
+    height: 80%;
+    background-color: ;
+    margin-left: 20vw;
+    font-family: 'MohrRoundedAlt';
+    color: white;
+    text-align: center;
+    line-height: 4.8vh;
+    font-size: 2.5vh;
+    -moz-transform: matrix( 0.66977026080155, 0, 0, 0.66977026080155, 0, 0);
+    -webkit-transform: matrix( 0.66977026080155, 0, 0, 0.66977026080155, 0, 0);
+    -ms-transform: matrix( 0.66977026080155, 0, 0, 0.66977026080155, 0, 0);
+}
+
+#div_menu2 {
+    min-width: 10%;
+    height: 80%;
+    background-color: ;
+    color: white;
+    text-align: center;
+    line-height: 4.8vh;
+    font-size: 2.5vh;
+    margin-left: -2vw;
+    font-family: 'MohrRoundedAlt';
+    -moz-transform: matrix( 0.66977026080155, 0, 0, 0.66977026080155, 0, 0);
+    -webkit-transform: matrix( 0.66977026080155, 0, 0, 0.66977026080155, 0, 0);
+    -ms-transform: matrix( 0.66977026080155, 0, 0, 0.66977026080155, 0, 0);
+}
+
+#div_menu3 {
+    min-width: 10%;
+    height: 80%;
+    background-color: ;
+    color: white;
+    text-align: center;
+    line-height: 4.8vh;
+    font-size: 2.5vh;
+    margin-left: -2vw;
+    font-family: 'MohrRoundedAlt';
+    -moz-transform: matrix( 0.66977026080155, 0, 0, 0.66977026080155, 0, 0);
+    -webkit-transform: matrix( 0.66977026080155, 0, 0, 0.66977026080155, 0, 0);
+    -ms-transform: matrix( 0.66977026080155, 0, 0, 0.66977026080155, 0, 0);
+}
+
+
+/****** FIM HEADER*****/
+
+#areaClose{
+    width: 100%;
+    height: 10%;
+    background-color: ;
+}
+
+
+#containerAmpliar{
+    width: 20.5vw;
+    height: 55vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: ;
+    background-size: contain;
+}
+
+#img1Ampliar{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: ;
+    background-size: contain;
+    z-index: 998;
+}
+
+#fechar{
+    width:8%;
+    height: 60%;
+    /* border-radius: 80%; */
+    /* background-color: rgb(155, 61, 61); */
+    margin-left: auto;
+    background-image: url('../imagens/close.jpeg');
+    background-size: contain;
+    background-repeat:no-repeat;
+    z-index: 999;
+    margin-right: 0.5vw;
+
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    display: none;
+   
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#modal {
+    width: 800px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    background-color: #ffffff;
+}
+
+
+/********BG LARANJA**********/
+
+#bgLaranja {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: ;
+}
+
+#area1 {
+    width: 100%;
+    height: 65vh;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding: 2vh;
+    padding-top: 3vh;
+    display: flex;
+    /* position: absolute; */
+    background: linear-gradient(345deg, rgba(203, 89, 34, 1) 66%, rgba(229, 127, 16, 1) 100%);
+    overflow: hidden;
+    z-index: 2;
+    background-color: ;
+}
+
+.bg_point {
+    width: 100%;
+    height: 60vh;
+    margin: 0px;
+    /* position: absolute; */
+    background-image: url("../imagens/point.png");
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: flex;
+    background-color: ;
+}
+
+ #imgFamilia {
+    width: 60%;
+    height: 100%;
+    margin-top: -4vh;
+    margin-left:auto;
+    margin-right: auto;
+    background-color:  ;
+    z-index: 999;
+    /* overflow: hidden; */
+    /* background-repeat: no-repeat;
+    background-position: center; */
+    /* background-size: contain; */
+    /* background-image: url('../imagens/img1.png'); */
+}
+
+
+
+
+#tagImgFamilia {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* 
+#imgBoia {
+    width: 18%;
+    height: 100%;
+    background-color: ;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-left: -5vw;
+    background-image: url('../imagens/boia.png');
+} */
+
+#areaTxt {
+    width: 30%;
+    height: 100%;
+    background-color: ;
+    font-family: "MohrRounded";
+    box-sizing: border-box;
+    padding: 2vh;
+    padding-top: 5vh;
+    margin-left: -4vw;
+    z-index: 999;
+    display: none;
+}
+
+#txt_1_2 {
+    font-size: 8vh;
+    font-family: "MohrRounded-Black";
+    color: rgb(254, 234, 48);
+    text-transform: uppercase;
+    line-height: 0.859;
+    text-align: left;
+    -moz-transform: matrix( 4.22091672317942, 0, 0, 4.23217268936533, 0, 0);
+    -webkit-transform: matrix( 4.22091672317942, 0, 0, 4.23217268936533, 0, 0);
+    -ms-transform: matrix( 4.22091672317942, 0, 0, 4.23217268936533, 0, 0);
+}
+
+#txt_3_4 {
+    font-size: 6vh;
+    font-family: "MohrRounded-Regular";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 0.859;
+    text-align: left;
+    -moz-transform: matrix( 4.22091672317942, 0, 0, 4.23217268936533, 0, 0);
+    -webkit-transform: matrix( 4.22091672317942, 0, 0, 4.23217268936533, 0, 0);
+    -ms-transform: matrix( 4.22091672317942, 0, 0, 4.23217268936533, 0, 0);
+}
+
+
+/************AREA2*******************/
+
+#area2 {
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(254, 195, 56);
+    box-sizing: border-box;
+    padding: 2vh;
+    padding-top: 0vh;
+    display: flex;
+}
+/* 
+#divImg {
+    width: 45%;
+    height: 80%;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    /* display: flex; */
+    z-index: 999;
+   margin-top: -2vh;
+    /* background-image: url('../imagens/imgVideo.jpg'); */
+} */
+
+
+video{
+    width: 100%;
+    height:auto;
+}
+
+
+
+#iconPlay {
+    width: 10%;
+    height: 17%;
+    /* background-color: whitesmoke; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../imagens/play.png');
+}
+
+
+/**********AREA3 *********************/
+
+#area3 {
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(203, 89, 34);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10vh;
+    box-sizing: border-box;
+    padding-top: 8vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 1vh;
+}
+
+#titulo_dica {
+    /* background-color: red; */
+    font-family: "MohrRounded-Black";
+    color: white;
+    font-size: 3vh;
+    box-sizing: border-box;
+    padding-left: 10vw;
+}
+
+#titulo_aprenda {
+    font-family: "MohrRounded-Black";
+    color: rgb(203, 88, 33);
+    font-size: 3vh;
+    box-sizing: border-box;
+    padding-left: 10vw;
+}
+
+#div_slider {
+    width: 80%;
+    height: 85%;
+    margin-top: 1vh;
+    background-color: ;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.seta_esquerda {
+    width: 5%;
+    height: 8vh;
+    background-color: ;
+    margin-top: auto;
+    background-repeat: no-repeat;
+    margin-bottom: auto;
+    background-image: url('../imagens/seta_esquerda.png');
+}
+
+#imgCaixa {
+    width: 30%;
+    height: 35vh;
+    margin-left: 10vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* background-color:blue ; */
+    overflow: hidden;
+    /* background-image: url('../imagens/imgCaixa.png'); */
+}
+
+#areaTxt2 {
+    width: 40%;
+    height: 80%;
+    background-color: ;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: "MohrRounded-Black";
+    text-align: center;
+    color: rgb(254, 234, 48);
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 3.5vh;
+    margin-right: 1vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrosel{
+    width: 200%;
+    height: 100%;
+    background-color: ;
+}
+
+.carrosel2{
+    width: 200%;
+    height: 100%;
+    background-color: ;
+}
+
+.item{
+    width: 50%;
+    height: 100%;
+    background-color: ;
+    float: left;
+    display: inline;
+}
+
+#img_dica1{
+    background-color: ;
+    background-image: url('../imagens/imgCaixa.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* #img_dica1 > img{
+    height: 100%;
+    width:100%;
+} */
+
+#img_dica5{
+    background-color: ;
+    background-image: url('../imagens/vazamentos.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#img_dica2{
+    background-color: ;
+    background-image: url('../imagens/reuso.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#img_dica3{
+    background-color: ;
+    background-image: url('../imagens/oleo-na-pia.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#img_dica4{
+    background-color: ;
+    background-image: url('../imagens/denuncie-gato.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.active {
+    display: block;
+    left: 0;
+}
+
+
+
+/* #areaTxt2 {
+    width: 100vw;
+    height: 80%;
+    background-color: brown;
+    font-family: "MohrRounded-Black";
+    text-align: center;
+    color: rgb(254, 234, 48);
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 3.5vh;
+} */
+
+.seta_direita {
+    width: 5%;
+    height: 8vh;
+    background-color: ;
+    margin-top: auto;
+    background-repeat: no-repeat;
+    margin-bottom: auto;
+    margin-left: auto;
+    background-image: url('../imagens/seta_direita.png');
+}
+
+
+/*******FIM DA AREA3*****/
+
+#area4 {
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(254, 195, 56);
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding-top: 8vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 1vh;
+}
+
+#div_slider2 {
+    width: 80%;
+    height: 80%;
+    margin-top: 1vh;
+    background-color: ;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div_img {
+    width: 15%;
+    height: 50%;
+    background-color: ;
+    /* margin-left: 5vw; */
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.img1 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 8vw;
+    background-image: url('../imagens/img_aprenda1.jpg');
+}
+
+#tagImg1{
+    width: 100%;
+    height: 100%;
+    background-color: chartreuse;
+}
+
+.img2 {
+    background-size: contain;
+    margin-left: 8vw;
+    background-repeat: no-repeat;
+    background-image: url('../imagens/img_aprenda2.jpg');
+}
+
+.img3 {
+    background-size: contain;
+    margin-left: 8vw;
+    background-repeat: no-repeat;
+    margin-right: 1vw;
+    background-image: url('../imagens/img_aprenda3.jpg');
+}
+
+
+/******FIM DA AREA4***/
+
+
+/******************* FOOOOTER********************/
+
+#footer {
+    width: 100%;
+    height: 10vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    background-image: url('../imagens/footerBgjpg.jpg');
+}
+
+#footer_txt {
+    height: 100%;
+    width: 35%;
+    background-color: ;
+    margin-left: 2%;
+    font-family: "MohrRoundedAlt";
+    color: white;
+    box-sizing: border-box;
+    padding-top: 1vh;
+}
+
+#footer_tel {
+    width: 20%;
+    height: 100%;
+    /* background-color: black; */
+    margin-left: 5vw;
+    box-sizing: border-box;
+    font-family: "MohrRoundedAlt";
+    padding-top: 1vh;
+    color: white;
+}
+
+#footer_sociais {
+    width: 20%;
+    height: 100%;
+    /* background-color: black; */
+    margin-left: 11vw;
+    box-sizing: border-box;
+    font-family: "MohrRoundedAlt";
+    padding-top: 1vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5vh;
+}
+
+#txtRedes {
+    width: 100%;
+    height: 50%;
+    /* background-color: BLACK; */
+    font-family: "MohrRoundedAlt";
+}
+
+#areaIcons {
+    width: 100%;
+    height: 50%;
+    /* background-color: brown; */
+    margin-top: auto;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.icons {
+    margin-left: 1vh;
+    width: 10%;
+    height: 100%;
+    /* background-color: chartreuse; */
+}
+
+.face {
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-image: url('../imagens/face.png');
+}
+
+.twitter {
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../imagens/twitter.png');
+}
+
+.google {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-position: right;
+    background-image: url('../imagens/gplus.png');
+}
+
+.insta {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../imagens/insta.png');
+}
+
+.bg_video {
+    background-size: contain;
+    width: 100%;
+    padding: 0px;
+}
+
+@media screen and (min-width: 750px) and (max-width:1100px) {
+
+    #divImg{
+        background-color: ;
+        margin-left: auto;
+        margin-right: auto;
+        width:400px;
+        height: 200px;
+    }
+}   
+
+@media screen and (max-width: 750px) {
+
+  
+
+    #area2 {
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(254, 195, 56);
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        padding: 2vh;
+        padding-top: 3vh;
+        display: flex;
+   
+    }
+
+
+    #item1{
+        height: 130%;
+        background-color: ;
+    }
+
+    #div_logo {
+       
+        width: 20vh;
+        margin-left: -1vw;
+    }
+    #div_menu1 {
+        background-color: ;
+        margin-left: -1vw;
+        width: 25vw;
+        font-size: 1.8vh;
+    }
+    #div_menu2 {
+        background-color: ;
+        margin-left: -10vw;
+        width: 60vw;
+        text-align: left;
+        font-size: 1.8vh;
+        text-align: center;
+    }
+    #div_menu3 {
+        background-color: ;
+        min-width: 10vw;
+        margin-left: -8vw;
+        font-size: 1.8vh;
+    }
+    #imgFamilia {
+        width:100%;
+        height: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 999;
+        /* background-size: contain; */
+        background-position: center;
+        background-color: ;
+    }
+    #imgBoia {
+        width: 30%;
+        height: 40%;
+        background-color: ;
+        margin-left: -10vw;
+        z-index: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #areaTxt {
+        width: 50%;
+        height: 50%;
+        background-color: ;
+        font-family: "MohrRounded";
+        box-sizing: border-box;
+        padding: 2vh;
+        padding-top: 4vh;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    #txt_1_2 {
+        font-size: 4vh;
+        font-family: "MohrRounded-Black";
+        color: rgb(254, 234, 48);
+        text-transform: uppercase;
+        line-height: 0.859;
+        text-align: left;
+        -moz-transform: matrix( 4.22091672317942, 0, 0, 4.23217268936533, 0, 0);
+        -webkit-transform: matrix( 4.22091672317942, 0, 0, 4.23217268936533, 0, 0);
+        -ms-transform: matrix( 4.22091672317942, 0, 0, 4.23217268936533, 0, 0);
+    }
+    #txt_3_4 {
+        font-size: 3vh;
+        font-family: "MohrRounded-Regular";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        background-color: ;
+        line-height: 0.859;
+        text-align: left;
+        -moz-transform: matrix( 4.22091672317942, 0, 0, 4.23217268936533, 0, 0);
+        -webkit-transform: matrix( 4.22091672317942, 0, 0, 4.23217268936533, 0, 0);
+        -ms-transform: matrix( 4.22091672317942, 0, 0, 4.23217268936533, 0, 0);
+    }
+    #divImg {
+        width:450px;
+        height: 200px;
+        background-color: ;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0vh;
+        /* display: flex; */
+        z-index: 999;
+        padding: 0px;
+        /* overflow: hidden; */
+        background-size: cover;
+        /* background-image: url('../imagens/imgVideo.jpg'); */
+    }
+    #div_slider {
+        width: 100%;
+        height: 85%;
+        margin-top: 1vh;
+        background-color: ;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .seta_esquerda {
+        width: 5%;
+        height: 15vh;
+        background-color:  ;
+        margin-top: auto;
+        background-repeat: no-repeat;
+        margin-bottom: auto;
+        background-position: right;
+        background-image: url('../imagens/seta_esquerda.png');
+        margin-left: auto;
+        background-size: contain;
+    }
+    #imgCaixa {
+        width:45%;
+        height: 35vh;
+        margin-left: 4vw;
+        margin-top: auto;
+        margin-bottom: auto;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-color: ;
+        overflow: hidden;
+        /* background-image: url('../imagens/imgCaixa.png'); */
+    }
+    .seta_direita {
+        width: 5%;
+        height: 15vh;
+        background-color: ;
+        margin-top: auto;
+        background-repeat: no-repeat;
+        margin-bottom: auto;
+        background-position: right;
+        background-image: url('../imagens/seta_direita.png');
+        margin-left: auto;
+        background-size: contain;
+    }
+    #areaTxt2 {
+        width: 60%;
+        height: 65%;
+        background-color: ;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-family: "MohrRounded-Black";
+        text-align: center;
+        color: rgb(254, 234, 48);
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 2vh;
+    }
+
+    #item1{
+        background-color: ;
+        box-sizing: border-box;
+        padding-top: 2vh;
+    }
+
+    #item3{
+        background-color: ;
+        box-sizing: border-box;
+        padding-top: 5vh;
+    }
+
+    #item5{
+        background-color: ;
+        box-sizing: border-box;
+        padding-top: vh;
+    }
+
+    #item2{
+        background-color: ;
+        box-sizing: border-box;
+        padding-top: 5vh;
+    }
+
+    #div_slider2 {
+        width: 100%;
+        height: 85%;
+        margin-top: 1vh;
+        background-color: ;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .div_img {
+        width: 30%;
+        height: 50%;
+        background-color: ;
+        margin-left: 7vw;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    #area4 {
+        width: 100%;
+        height: 40vh;
+        background-color: rgb(254, 195, 56);
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        padding-top: 8vh;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-bottom: 1vh;
+    }
+    .img3 {
+        margin-right: 2vw;
+    }
+    #footer_txt {
+        height: 100%;
+        width: 40%;
+        background-color: ;
+        font-family: "MohrRoundedAlt";
+        color: white;
+        box-sizing: border-box;
+        padding-top: 1vh;
+        font-size: 1.0vh;
+        margin-left: 0vw;
+    }
+    #footer_tel {
+        width: 30%;
+        height: 100%;
+        background-color: ;
+        margin-left: 5vw;
+        box-sizing: border-box;
+        font-family: "MohrRoundedAlt";
+        padding-top: 1vh;
+        color: white;
+        font-size: 1.2vh;
+    }
+    #txtRedes {
+        width: 30vw;
+        height: 50%;
+        background-color: ;
+        margin-left: -10.1vw;
+        font-size: 1.2vh;
+        font-family: "MohrRoundedAlt";
+    }
+    #areaIcons {
+        width: 30vw;
+        height: 50%;
+        background-color: ;
+        margin-top: auto;
+        box-sizing: border-box;
+        display: flex;
+        margin-left: -10vw;
+    }
+    .icons {
+        margin-left: 0.5vh;
+        width: 20%;
+        height: 100%;
+        background-color: ;
+       
+    }
+
+
+    #area2 {
+        width: 100%;
+        height: 50vh;
+        background-color: rgb(254, 195, 56);
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        padding: 2vh;
+        padding-top: 3vh;
+        display: flex;
+   
+    }
+    .bg_video {
+        background-size: contain;
+        width: 100%;
+        padding: 0px;
+    }
+    .twitter {
+        background-position: center;
+        background-size: 20px;
+    }
+ 
+    .face {
+        background-size: inherit;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 10px;
+        background-image: url('../imagens/face.png');
+    }
+
+    .insta {
+        
+        background-position: center;
+        background-size: 20px;
+    }
+
+    .google{
+        background-position: center;
+        background-size: 20px;
+    }
+
+
+    #areaClose{
+        width: 130%;
+        height: 10%;
+        background-color: ;
+    }
+    
+    
+    #containerAmpliar{
+        width: 70vw;
+        height: 55vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        background-color:;
+        background-size: contain;
+    }
+    
+    #img1Ampliar{
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        background-color: ;
+        background-size: contain;
+        z-index: 998;
+    }
+    
+    #fechar{
+        width:8%;
+        height: 75%;
+        /* border-radius: 80%; */
+        /* background-color: rgba(255,255,255,1); */
+        /* margin-left: auto; */
+        background-image: url('../imagens/close.jpeg');
+        background-size: contain;
+        background-repeat:no-repeat;
+        z-index: 999;
+        margin-right: 10vw;
+    
+    }
+
+    #area1{
+        height: 40vh;
+    }
+
+    #imgFamilia{
+        height: 40vh;
+        margin-top: auto;
+        margin-bottom: auto;
+        background-color: ;
+    }
+/* 
+    #img_dica1{
+        background-size: 120px;
+    } */
+
+
+}
+
+@media screen and (min-width:1100px) and (max-width: 1300px) {
+    /* #imgBoia {
+        width: 15%;
+        height: 100%;
+        background-color: ;
+        margin-left: -5vw;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url('../imagens/boia.png');
+    } */
+
+    
+
+
+    
+/* 
+    #imgFamilia {
+        width: 80%;
+        background-color: ;
+        background-position: left;
+
+    } */
+
+    #areaTxt {
+        width: 50%;
+        height: 100%;
+        background-color: ;
+        font-family: "MohrRounded";
+        box-sizing: border-box;
+        padding: 2vh;
+        padding-top: 10vh;
+        margin-left: -10vw;
+    }
+    #txt_1_2 {
+        font-size: 4.2vh;
+        font-family: "MohrRounded-Black";
+        color: rgb(254, 234, 48);
+        text-transform: uppercase;
+        line-height: 0.859;
+        text-align: left;
+        -moz-transform: matrix( 4.22091672317942, 0, 0, 4.23217268936533, 0, 0);
+        -webkit-transform: matrix( 4.22091672317942, 0, 0, 4.23217268936533, 0, 0);
+        -ms-transform: matrix( 4.22091672317942, 0, 0, 4.23217268936533, 0, 0);
+    }
+    #txt_3_4 {
+        font-size: 3vh;
+        font-family: "MohrRounded-Regular";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 0.859;
+        text-align: left;
+        -moz-transform: matrix( 4.22091672317942, 0, 0, 4.23217268936533, 0, 0);
+        -webkit-transform: matrix( 4.22091672317942, 0, 0, 4.23217268936533, 0, 0);
+        -ms-transform: matrix( 4.22091672317942, 0, 0, 4.23217268936533, 0, 0);
+    }
+    .div_img {
+        width: 18%;
+        height: 50%;
+        background-color: ;
+        margin-left: 7vw;
+        margin-top: 10vh;
+    }
+    #footer {
+        width: 100%;
+        height: 10vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        background-image: url('../imagens/footerBgjpg.jpg');
+    }
+    #footer_txt {
+        height: 100%;
+        width: 45%;
+        background-color: ;
+        font-family: "MohrRoundedAlt";
+        color: white;
+        box-sizing: border-box;
+        padding-top: 1vh;
+        margin-left: 0vh;
+    }
+    #footer_tel {
+        width: 20%;
+        height: 100%;
+        /* background-color: black; */
+        margin-left: 5vw;
+        box-sizing: border-box;
+        font-family: "MohrRoundedAlt";
+        padding-top: 1vh;
+        color: white;
+    }
+    #footer_sociais {
+        width: 20%;
+        height: 100%;
+        /* background-color: black; */
+        margin-left: 11vw;
+        box-sizing: border-box;
+        font-family: "MohrRoundedAlt";
+        padding-top: 1vh;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0.5vh;
+    }
+
+    #txtRedes {
+        width: 100%;
+        height: 35%;
+        /* background-color: BLACK; */
+        font-family: "MohrRoundedAlt";
+        
+    }
+    #areaIcons {
+        width: 100%;
+        height: 50%;
+        background-color: ;
+        margin-top: -0.5vh;
+        box-sizing: border-box;
+        display: flex;
+    }
+    /* .seta_direita {
+        width: 3%;
+        height: 10vh;
+        background-color: red;
+        margin-top: auto;
+        background-repeat: no-repeat;
+        margin-bottom: auto;
+        background-position: right;
+        background-image: url('../imagens/seta_direita.png');
+        margin-left: auto;
+    } */
+
+    #divImg{
+        background-color:;
+        width:400px;
+        height: 200px;
+       margin: -5vh;
+       height: 100%;
+       margin-left: auto;
+       margin-right: auto;
+    }
+}
+
+@media screen and (min-width:750px) and (max-width:1100px) {
+    #img1Ampliar{
+        width: 40vw;
+        background-color: ;
+    }
+
+ 
+
+    #areaClose{
+        background-color: ;
+        width: 25vw;
+    }
+    
+    #divImg {
+        margin-top: -3vh;
+        width:400px;
+        height: 200px;
+        background-color:;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .seta_esquerda{
+        height: 12vh;
+        width: 6vw;
+        background-color: ;
+    }
+    .seta_direita{
+        height: 12vh;
+        width: 6vw;
+        background-color: ;
+    }
+    
+    #areaTxt2{
+        height: 40vh;
+        background-color: ;
+    }
+
+    #item1{
+        /* height: 100%; */
+        /* background-color: black; */
+    }
+
+    #imgCaixa{
+        height: 40vh;
+        width: 20vw;
+        background-color: ;
+    }
+
+    #footer_txt{
+        background-color: ;
+        font-size: 1.2vh;
+    }
+
+    
+
+    #footer_tel{
+        background-color: ;
+        font-size: 1.2vh;
+    }
+
+    #footer_sociais{
+        background-color: ;
+        font-size: 1.2vh;
+    }
+
+    .twitter {
+        background-position: center;
+        background-size: 15px;
+    }
+ 
+    .face {
+        background-size: inherit;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 10px;
+        background-image: url('../imagens/face.png');
+    }
+
+    .insta {
+        
+        background-position: center;
+        background-size: 15px;
+    }
+
+    .google{
+        background-position: center;
+        background-size: 15px;
+    }
+
+
+}
+
+@media screen and (min-width:1100px) and (max-width: 1900px) {
+    #divImg {
+        margin-top: -5vh;
+        width:450px;
+        height: 200px;
+        background-color:  ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* #imgFamilia {
+        width: 27%;
+        background-color: ;
+
+    } */
+
+    .seta_esquerda{
+        background-color:  ;
+        height: 10vh;
+    }
+
+    .seta_direita{
+        background-color: ;
+        height: 10vh;
+    }
+
+    #footer{
+       height: 13vh;
+
+    }
+
+    #footer_sociais{
+        height: 75%;
+        background-color:     ;
+    }
+
+    #txtRedes{
+        font-size: 1.7vh;
+        background-color: ;
+        /* margin-left: 1vw; */
+    }
+}
+
+@media screen and (min-width:1920px) {
+    #divImg {
+        margin-top: -5vh;
+        width:710px;
+        height: 250px;
+        background-color:  ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* #imgFamilia {
+        width: 27%;
+        background-color: ;
+
+    } */
+
+    .seta_esquerda{
+        background-color:  ;
+        height: 10vh;
+    }
+
+    .seta_direita{
+        background-color: ;
+        height: 10vh;
+    }
+
+    #footer{
+       height: 13vh;
+
+    }
+
+    #footer_sociais{
+        height: 75%;
+        background-color:     ;
+    }
+
+    #txtRedes{
+        font-size: 1.7vh;
+        background-color: ;
+        /* margin-left: 1vw; */
+    }
+
+
+    #item3{
+        background-color: ;
+        box-sizing: border-box;
+        padding-top: 4vh;
+    }
+
+    
+    #item2{
+        background-color: ;
+        box-sizing: border-box;
+        padding-top: 4vh;
+    }
+}
